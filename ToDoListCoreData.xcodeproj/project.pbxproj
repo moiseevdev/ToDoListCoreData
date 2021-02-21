@@ -58,10 +58,10 @@
 		E925651825E05DE90031A707 /* ToDoListCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				E94285DF25E1A19B009047C1 /* TableViewController.swift */,
 				E925651925E05DE90031A707 /* AppDelegate.swift */,
 				E925651B25E05DE90031A707 /* SceneDelegate.swift */,
 				E925651F25E05DE90031A707 /* Main.storyboard */,
-				E94285DF25E1A19B009047C1 /* TableViewController.swift */,
 				E925652525E05DEC0031A707 /* Assets.xcassets */,
 				E925652725E05DEC0031A707 /* LaunchScreen.storyboard */,
 				E925652A25E05DEC0031A707 /* Info.plist */,
