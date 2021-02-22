@@ -45,6 +45,7 @@ class TableViewController: UITableViewController {
         
         do {
             try context.save()
+            tasks.append(taskObject)
         } catch let error as NSError {
             print(error.localizedDescription)
         }
@@ -60,6 +61,15 @@ class TableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         let context = getContext()
+        let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "tittle", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        do {
+            tasks = try context.fetch(fetchRequest)
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
     }
     
     
